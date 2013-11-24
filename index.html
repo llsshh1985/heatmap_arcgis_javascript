@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>HeatMap_ArcGIS</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="http://js.arcgis.com/3.7/js/esri/css/esri.css">
+		<script src="http://js.arcgis.com/3.7/"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/toast.js"></script>
+		<script src="js/map.js"></script>
+  	</head>
+    <body>
+	<div id="map">
+	</div>
+	<div id="top">
+		<img id="logo" src="img/logo.png" alt="手机定位"/>
+		<ul id="menu" class="black">
+			<li class="active"><a>&nbsp;&nbsp;首 页&nbsp;&nbsp;</a></li>
+          	<li><a onclick="menuClick('shadedownload','btclose');">&nbsp;&nbsp;下 载&nbsp;&nbsp;</a></li>
+			<li><a onclick="menuClick('shadehelp','btclosehelp');">&nbsp;&nbsp;帮 助&nbsp;&nbsp;</a></li>
+			<li><a onclick="menuClick('shadeabout','btcloseabout');">&nbsp;&nbsp;关 于&nbsp;&nbsp;</a></li>
+			<li><a onclick="menuClick('shadecontact','btclosecontact');">&nbsp;&nbsp;联 系&nbsp;&nbsp;</a></li>
+		</ul>
+	</div>
+	
+	<div class="shade" id="shade"></div>
+	
+	<div class="shadedownload" id="shadedownload"><button id="btclose" class="btclose"><img src="img/close.png" alt="关闭"/></button>
+		<iframe src="page/download.html" class="frame"></iframe>
+	</div> 
+	<div class="shadedownload" id="shadecontact" ><button id="btclosecontact" class="btclose"><img src="img/close.png" alt="关闭"/></button>
+		<iframe src="page/contact.html" class="frame"></iframe>
+	</div> 
+	<div class="shadedownload" id="shadehelp" ><button id="btclosehelp" class="btclose"><img src="img/close.png" alt="关闭"/></button>
+		<iframe src="page/help.html" class="frame"></iframe>
+	</div> 
+	<div class="shadedownload" id="shadeabout" ><button id="btcloseabout" class="btclose"><img src="img/close.png" alt="关闭"/></button>
+		<iframe src="page/about.html" class="frame"></iframe>
+	</div> 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
